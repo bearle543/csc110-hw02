@@ -19,7 +19,7 @@ def read_two_ints():
     x = int(input("give me x: "))
     y = int(input("give me y: "))
     print(x, y)
-    return x,y
+    return x, y
     
 # Task 2.1:
 #  Complete the function "compute_multadd" below:
@@ -52,9 +52,9 @@ def print_fancy(a, b, xy_multadd):
     # TODO: complete the function instead of the line shown below
     print("****************")
     print("RESULTS: ")
-    print("first number:", a)
-    print("second number: ",b)
-    print("multadd results: ", xy_multadd)
+    print("first number: ", a)
+    print("second number: ", b)
+    print("multadd result: ", xy_multadd)
     print("================")
 
 def main ():
