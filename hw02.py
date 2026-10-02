@@ -16,10 +16,10 @@ def read_two_ints():
     # the return shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
     
-    a = int(input("give me x: "))
-    b = int(input("give me y: "))
-    print(a, b)
-    return a,b
+    x = int(input("give me x: "))
+    y = int(input("give me y: "))
+    print(x, y)
+    return x,y
     
 # Task 2.1:
 #  Complete the function "compute_multadd" below:
@@ -33,16 +33,16 @@ def compute_multadd(a, b):
     # the pass shown below is a placeholder to make sure this runs
     # TODO: complete the function instead of the line shown below
     
-    mult_result = (a * b)
-    print("mult result: ", mult_result)
+    mult_result = (a*b)
+    print("mult result:", mult_result)
     add_result = (a+b)
-    print("add result: ", add_result)
+    print("add result:", add_result)
     return mult_result/add_result
 
 # Task 3.1:
 #  Complete the function "print_fancy" below:
 
-def print_fancy(a, b, ab_multadd):
+def print_fancy(a, b, xy_multadd):
     
     # ADD a Docstring for this function
     
@@ -52,9 +52,9 @@ def print_fancy(a, b, ab_multadd):
     # TODO: complete the function instead of the line shown below
     print("****************")
     print("RESULTS: ")
-    print("first number: ", a)
-    print("second number: ", b)
-    print("multadd results: ", ab_multadd)
+    print("first number:", a)
+    print("second number: ",b)
+    print("multadd results: ", xy_multadd)
     print("================")
 
 def main ():
@@ -67,20 +67,20 @@ def main ():
     #  the call should provide no arguments
     #  store the returned values into two variables: x and y
 
-    a, b = read_two_ints()
+    x, y = read_two_ints()
 
     # Task 2.2:
     #  Add one line below to call multadd (note that it returns one value)
     #  the call should provide the arguments x, and y you obtained above;
     #  store the returned value in a variable called xy_multadd
 
-    ab_multadd = compute_multadd(a, b)
+    xy_multadd = compute_multadd(x, y)
 
     # Task 3.2:
     #  Complete The line below to call print_fancy
     #  the call should provide the arguments x, y, and xy_multadd you obtained above;
 
-    print_fancy(a, b, ab_multadd)
+    print_fancy(x, y, xy_multadd)
 
 
     # Do not modify this final print statement
