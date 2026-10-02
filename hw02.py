@@ -53,9 +53,9 @@ def print_fancy(a, b, xy_multadd):
     
     print("****************")
     print("RESULTS: ")
-    print("first number: ",a)
-    print("second number: ",b)
-    print("multadd result: ",xy_multadd)
+    print("first number:", a)
+    print("second number:", b)
+    print("multadd result:", xy_multadd)
     print("================")
 
 def main ():
